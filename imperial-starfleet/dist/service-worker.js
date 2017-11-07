@@ -7,7 +7,7 @@ let urlsToCache = [
 
 
 self.addEventListener('install', function(event) {
-  event.waitUnitl(
+  event.waitUntil(
   	caches.open(CACHE_NAME)
   	.then(function(cache){
   		console.log('opened cache!');
